@@ -12,4 +12,3 @@ Sidenotes:
  - In the book, table is being selected by the current character value (the character that is currently being processed), 
    while the row is being selected by the previous character (character that is preceding current character).
    In this implementation, these values are swapped (previous character selects the table and the current character selects the row inside that table).
- - Comments in the code were written by ChatGPT-4o.

@@ -234,13 +234,13 @@ string mnp7_decompression(const string& input) {
 }
 
 string generateRandomString(int N) {
-    std::string chars = "abcdefghij";
-    std::string result;
+    string chars = "abcdefghijklmnopqrstuvwxyz";
+    string result;
 
-    std::srand(std::time(nullptr));
+    srand(time(nullptr));
 
     while (result.size() < N) {
-        char ch = chars[std::rand() % chars.size()];
+        char ch = chars[rand() % chars.size()];
 
         for (int i = 0; i < 4 && result.size() < N; ++i) {
             result += ch;
